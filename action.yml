@@ -9,5 +9,5 @@ outputs:
   timestamp:
     description: 'Time of greeting'
 runs:
-  using: 'node16'
+  using: 'node14'
   main: 'index.js'
