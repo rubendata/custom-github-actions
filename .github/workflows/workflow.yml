@@ -100,4 +100,4 @@ jobs:
         # with:
         #   name: "YourNameHere" # Set the value here
         # env:
-          DEBUG: 'true'
+          # DEBUG: 'true'
