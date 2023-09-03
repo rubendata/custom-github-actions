@@ -31,8 +31,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-      - name: Install Dependencies   # <-- Add this step to install dependencies
-        run: npm install
+      # - name: Install Dependencies   # <-- Add this step to install dependencies
+      #   run: npm install
 
       - name: Print a message for main branch
         if: github.ref == 'refs/heads/main'
@@ -56,8 +56,8 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Install Dependencies   # <-- Add this step to install dependencies
-        run: npm install
+      # - name: Install Dependencies   # <-- Add this step to install dependencies
+      #   run: npm install
       - name: Print a message for main branch
         if: github.ref == 'refs/heads/main'
         run: echo "This is the main branch."
@@ -76,27 +76,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      # - name: Set up Node.js 
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: '16'
-      # - name: Debug Working Directory
-      #   run: ls -a ${{ github.workspace }}
-
-      # - name: Install Dependencies
-      #   run: npm install
-      #   working-directory: ${{ github.workspace }}
-
-      # - name: Publish test results
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: test-results
-      #     path: test-results.xml
-      # - name: Clean GitHub Actions Cache
-      #   run: |
-      #     npm cache clean --force
-      #     rm -rf node_modules
-      #   working-directory: ${{ github.workspace }}
+     
 
       - name: run custom action
         uses: rubendata/custom-github-actions@main
