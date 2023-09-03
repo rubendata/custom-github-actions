@@ -95,8 +95,9 @@ jobs:
         working-directory: ${{ github.workspace }}
 
       - name: run custom action
-        uses: rubendata/custom-github-actions@main
-        with:
-          name: "YourNameHere" # Set the value here
-        env:
+        run: node /home/runner/work/_actions/rubendata/custom-github-actions/main/index.js
+        # uses: rubendata/custom-github-actions@main
+        # with:
+        #   name: "YourNameHere" # Set the value here
+        # env:
           DEBUG: 'true'
