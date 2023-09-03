@@ -93,3 +93,5 @@ jobs:
         uses: rubendata/custom-github-actions@main
         with:
           name: "YourNameHere" # Set the value here
+        env:
+          DEBUG: 'true'
