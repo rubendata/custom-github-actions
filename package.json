@@ -1,19 +1,15 @@
 {
-  "name": "my_node_project",
+  "name": "custom_actions",
   "version": "1.0.0",
-  "description": "",
+  "description": "none",
   "main": "index.js",
   "scripts": {
-    "test": "node main.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "jest": "^29.5.0", 
-    "@actions/core": "^2.3.0"
-  },
+  "keywords": [],
   "dependencies": {
-    "@actions/core": "^2.3.0"
+    "@actions/core": "^1.10.0"
   }
-}  
+}
