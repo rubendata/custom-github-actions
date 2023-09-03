@@ -31,6 +31,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: latest
+      - name: Install Dependencies   # <-- Add this step to install dependencies
+        run: npm install
+
       - name: Print a message for main branch
         if: github.ref == 'refs/heads/main'
         run: echo "This is the main branch."
@@ -52,6 +55,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: latest
+
+      - name: Install Dependencies   # <-- Add this step to install dependencies
+        run: npm install
       - name: Print a message for main branch
         if: github.ref == 'refs/heads/main'
         run: echo "This is the main branch."
