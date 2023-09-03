@@ -100,3 +100,4 @@ jobs:
 
       - name: run custom action
         uses: rubendata/custom-github-actions@main
+        working-directory: ${{ github.workspace }}
