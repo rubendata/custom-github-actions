@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: 18
     - name: run custom action
-      uses: rubendata/custom-github-actions@main
+      uses: rubendata/custom-github-actions
 
     - name: Print a message
       run: echo "Hello, world!"
