@@ -30,7 +30,7 @@ jobs:
       - name: Set up Node.js 
         uses: actions/setup-node@v3
         with:
-          node-version: latest
+          node-version: '14'
       - name: Install Dependencies   # <-- Add this step to install dependencies
         run: npm install
 
@@ -54,7 +54,7 @@ jobs:
       - name: Set up Node.js 
         uses: actions/setup-node@v3
         with:
-          node-version: latest
+          node-version: '14'
 
       - name: Install Dependencies   # <-- Add this step to install dependencies
         run: npm install
@@ -79,5 +79,11 @@ jobs:
         with:
           name: test-results
           path: test-results.xml
+      - name: Clean GitHub Actions Cache
+        run: |
+          npm cache clean --force
+          rm -rf node_modules
+        working-directory: ${{ github.workspace }}
+
       - name: run custom action
         uses: rubendata/custom-github-actions@main
