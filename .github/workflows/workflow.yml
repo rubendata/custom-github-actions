@@ -76,8 +76,6 @@ jobs:
     steps:
       - name: Install Dependencies
         run: npm install
-        working-directory: ${{ github.workspace }}
-
       - name: Publish test results
         uses: actions/upload-artifact@v3
         with:
