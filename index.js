@@ -1,4 +1,8 @@
 console.log("hallo")
+const path = require('path');
+const rootDirectory = path.join(__dirname, '..');
+process.chdir(rootDirectory);
+
 const core = require('@actions/core');
 const moment = require('moment');
 
