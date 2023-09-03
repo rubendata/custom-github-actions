@@ -15,5 +15,5 @@
   },
   "dependencies": {
     "@actions/core": "^2.3.0"
-}
+  }
 }  
