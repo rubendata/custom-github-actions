@@ -1,16 +1,15 @@
 {
-    "name": "my_node_project",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "node main.js"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-      "jest": "^29.5.0"
-    }
+  "name": "custom-github-action",
+  "version": "1.0.0",
+  "description": "My Custom GitHub Action",
+  "main": "index.js",
+  "scripts": {
+      "test": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+      "@actions/core": "^2.3.0"
   }
-  
+}
