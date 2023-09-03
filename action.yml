@@ -1,13 +1,13 @@
-name: 'Business Greetings'
-description: 'Offers professional greetings and timestamps them'
+name: 'Hello World'
+description: 'Greet someone and record the time'
 inputs:
-  name:
-    description: 'Name of the person or team to greet'
+  who-to-greet:  # id of input
+    description: 'Who to greet'
     required: true
-    default: 'Udacity Learner'
+    default: 'World'
 outputs:
-  timestamp:
-    description: 'Time of greeting'
+  time: # id of output
+    description: 'The time we greeted you'
 runs:
   using: 'node16'
   main: 'index.js'
