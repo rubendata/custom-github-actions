@@ -30,7 +30,7 @@ jobs:
       - name: Set up Node.js 
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
       - name: Install Dependencies   # <-- Add this step to install dependencies
         run: npm install
 
@@ -54,7 +54,7 @@ jobs:
       - name: Set up Node.js 
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Install Dependencies   # <-- Add this step to install dependencies
         run: npm install
@@ -79,7 +79,7 @@ jobs:
       - name: Set up Node.js 
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
       - name: Debug Working Directory
         run: ls -a ${{ github.workspace }}
 
